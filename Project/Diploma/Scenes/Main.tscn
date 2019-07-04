@@ -1,0 +1,52 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Locations/Room2.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Archer1.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Magician.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Knight.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/Warrior.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Locations/Room1.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scenes/Player2.tscn" type="PackedScene" id=7]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 403.444, 323 )
+
+[node name="StaticBody2D2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 693.362, 323 )
+
+[node name="StaticBody2D3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 980.312, 323 )
+
+[node name="StaticBody2D4" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1269.3, 323 )
+
+[node name="StaticBody2D5" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1556.22, 323 )
+
+[node name="Archer" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1557.04, 182.295 )
+
+[node name="Magician" parent="." instance=ExtResource( 3 )]
+position = Vector2( 526.732, 580.641 )
+
+[node name="Knight" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1581.23, 608.577 )
+
+[node name="Warrior" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1095.61, 457.58 )
+
+[node name="StaticBody2D6" parent="." instance=ExtResource( 1 )]
+position = Vector2( 267.314, 198.788 )
+rotation = 1.5708
+
+[node name="StaticBody2D7" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1686.84, 183.041 )
+rotation = 4.71239
+
+[node name="Room1" parent="." instance=ExtResource( 6 )]
+position = Vector2( 411.819, 842.136 )
+
+[node name="KinematicBody2D" parent="." instance=ExtResource( 7 )]
+position = Vector2( 260.899, 589.263 )

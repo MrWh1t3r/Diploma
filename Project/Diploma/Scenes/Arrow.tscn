@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/Arrow.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/mobs/Archer Skeleton  Animations/All parts/arrow.png" type="Texture" id=2]
+
+
+[node name="RigidBody2D" type="RigidBody2D"]
+collision_layer = 524288
+contacts_reported = 1
+contact_monitor = true
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+rotation = 1.5708
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 2 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+scale = Vector2( 0.75, 0.75 )
+polygon = PoolVector2Array( -69.9417, -2.51519, -62.3663, -6.30289, -52.356, -8.73785, -46.2686, -3.46212, 62.7323, -2.6709, 63.182, 1.67589, -46.0174, 0.472109, -51.3526, 6.15521, -61.9069, 4.64745, -72.8091, -0.803688 )
+[connection signal="body_entered" from="." to="." method="_on_RigidBody2D_body_entered"]

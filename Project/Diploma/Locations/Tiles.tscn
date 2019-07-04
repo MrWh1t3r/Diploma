@@ -1,0 +1,146 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Textures/oppcastle-mod-tiles.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 14.9586, 12.6083 )
+
+[node name="Tiles" type="Node2D"]
+
+[node name="bridge" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 257, 27, 30, 30 )
+
+[node name="bridge2" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 257, -3, 30, 30 )
+
+[node name="sewage" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 225, 27, 30, 30 )
+
+[node name="sewage2" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 225, -3, 30, 30 )
+
+[node name="water2" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 225, 57, 30, 30 )
+
+[node name="water3" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 225, 87, 30, 30 )
+
+[node name="stairsRight1" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 195, 27, 30, 30 )
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="stairsRight1"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="stairsRight1/StaticBody2D3"]
+position = Vector2( 0, 1.19913 )
+scale = Vector2( -1, 1 )
+polygon = PoolVector2Array( -14.8697, 14.6719, -14.8697, -10.21, -11.8109, -7.96167, 14.359, 14.3721 )
+
+[node name="wallStairsRight1" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 225, 128, 32, 32 )
+
+[node name="stairsLeft" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 155, 27, 30, 30 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="stairsLeft"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="stairsLeft/StaticBody2D2"]
+position = Vector2( 0, 1.19913 )
+polygon = PoolVector2Array( -14.8697, 14.6719, -14.8697, -10.21, -10.0732, -10.21, 14.359, 14.3721 )
+
+[node name="wallStairsLeft" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 155, 57, 30, 30 )
+
+[node name="wallStairsLeft2" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 162, 63, 30, 30 )
+
+[node name="floor" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 125, 27, 30, 30 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="floor"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="floor/StaticBody2D"]
+position = Vector2( 0, 2.39825 )
+shape = SubResource( 9 )
+
+[node name="stairsLeft2" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 162, 33, 30, 30 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="stairsLeft2"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="stairsLeft2/StaticBody2D"]
+position = Vector2( -0.0897446, 1.07694 )
+polygon = PoolVector2Array( -14.6792, 13.9681, -14.7689, -11.0708, -12.3458, -9.00671, 14.7573, 13.9681 )
+
+[node name="wall" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 125, 57, 30, 30 )
+
+[node name="plank" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 352, 27, 30, 30 )
+
+[node name="plank2" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 382, 27, 30, 30 )
+
+[node name="plank3" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 418, 27, 30, 30 )
+
+[node name="plank4" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 352, 57, 30, 30 )
+
+[node name="plank5" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 288, 27, 32, 32 )

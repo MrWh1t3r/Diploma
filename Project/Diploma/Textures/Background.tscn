@@ -1,0 +1,125 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Textures/oppcastle-mod-tiles.png" type="Texture" id=1]
+
+[node name="Tiles" type="Node2D"]
+
+[node name="Wall" type="Sprite" parent="."]
+position = Vector2( 82.6405, 0.377356 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 147, 224, 32, 32 )
+
+[node name="Wall2" type="Sprite" parent="."]
+position = Vector2( 82.6405, 38.8781 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 127, 224, 32, 32 )
+
+[node name="Wall3" type="Sprite" parent="."]
+position = Vector2( 124.294, 40.1403 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 100, 224, 32, 32 )
+
+[node name="Wall4" type="Sprite" parent="."]
+position = Vector2( 127.53, 1.31623 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 70, 224, 32, 32 )
+
+[node name="Wall5" type="Sprite" parent="."]
+position = Vector2( 168.408, 2.2383 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 70, 224, 32, 32 )
+
+[node name="Wall6" type="Sprite" parent="."]
+position = Vector2( 170.867, 39.4285 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 70, 211, 32, 32 )
+
+[node name="Wall7" type="Sprite" parent="."]
+position = Vector2( 212.424, 1.62651 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 130, 211, 32, 32 )
+
+[node name="Wall8" type="Sprite" parent="."]
+position = Vector2( 213.5, 39.6261 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 156, 211, 32, 32 )
+
+[node name="Wall9" type="Sprite" parent="."]
+position = Vector2( 257.631, 3.70751 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 68.5, 285, 32, 32 )
+
+[node name="Wall10" type="Sprite" parent="."]
+position = Vector2( 258.885, 40.5022 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 288, 32, 32 )
+
+[node name="Wall11" type="Sprite" parent="."]
+position = Vector2( 296.826, 41.1651 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 256, 32, 32 )
+
+[node name="Wall12" type="Sprite" parent="."]
+position = Vector2( 297.09, 6.11685 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 224, 32, 32 )
+
+[node name="Wall13" type="Sprite" parent="."]
+position = Vector2( 299.04, -34.8479 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 192, 32, 32 )
+
+[node name="Wall14" type="Sprite" parent="."]
+position = Vector2( 344.728, -34.8479 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 192, 32, 32 )
+
+[node name="Window" type="Sprite" parent="."]
+position = Vector2( -69.9571, 0.463291 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 255.5, 32, 32 )
+
+[node name="Window2" type="Sprite" parent="."]
+position = Vector2( -31.7924, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 128, 255.5, 32, 32 )
+
+[node name="Tourch" type="Sprite" parent="."]
+position = Vector2( 32.0766, 1.90735e-006 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 287.5, 32, 32 )
+
+[node name="Spears" type="Sprite" parent="."]
+position = Vector2( -32.2897, 43.592 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 32, 32, 32 )
+
+[node name="Box" type="Sprite" parent="."]
+position = Vector2( 8.91834, 42.9108 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 64, 32, 32 )
+
+[node name="Barrel" type="Sprite" parent="."]
+position = Vector2( 40.9312, 41.208 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 96, 32, 32 )

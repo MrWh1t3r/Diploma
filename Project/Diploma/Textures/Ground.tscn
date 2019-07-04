@@ -1,0 +1,131 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Textures/oppcastle-mod-tiles.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 18.6192, 15.9147 )
+
+[node name="Tiles" type="Node2D"]
+
+[node name="FloorUp" type="Sprite" parent="."]
+position = Vector2( 96, -35 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 128, 0, 32, 32 )
+
+[node name="FloorDown" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 96, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 128, 32, 32, 32 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="FloorDown"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FloorDown/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="FloorRight" type="Sprite" parent="."]
+position = Vector2( 50, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 32, 32, 32 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="FloorRight"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FloorRight/StaticBody2D2"]
+shape = SubResource( 1 )
+
+[node name="Wall" type="Sprite" parent="."]
+position = Vector2( 96, 45 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 128, 64, 32, 32 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Wall"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="WallEnd" type="Sprite" parent="."]
+position = Vector2( 96, 90 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 128, 96, 32, 32 )
+
+[node name="WallRight" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 50, 45 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 64, 32, 32 )
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="WallRight"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WallRight/StaticBody2D3"]
+shape = SubResource( 1 )
+
+[node name="WallRightEnd" type="Sprite" parent="."]
+position = Vector2( 50, 90 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 96, 32, 32 )
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="WallRightEnd"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WallRightEnd/StaticBody2D4"]
+shape = SubResource( 1 )
+
+[node name="SawageDown" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 142, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 224, 32, 32, 32 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="SawageDown"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SawageDown/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="SawageUp" type="Sprite" parent="."]
+position = Vector2( 142, -35 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 224, 0, 32, 32 )
+
+[node name="BridgeDown" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 180, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 256, 32, 32, 32 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="BridgeDown"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BridgeDown/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="BridgeUp" type="Sprite" parent="."]
+position = Vector2( 180, -35 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 256, 0, 32, 32 )
+
+[node name="Water" type="Sprite" parent="."]
+position = Vector2( 142, 45 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 224, 64, 32, 32 )
+
+[node name="Water2" type="Sprite" parent="."]
+position = Vector2( 142.54, 90 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 224, 96, 32, 32 )
+
+[node name="Nothing" type="Sprite" parent="."]
+position = Vector2( 95.2056, 135.397 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 129, 127, 32, 32 )

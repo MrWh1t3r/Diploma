@@ -1,0 +1,70 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scripts/HighScores.gd" type="Script" id=1]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://Fonts/Xolonium-Regular.ttf"
+
+[sub_resource type="DynamicFont" id=2]
+size = 32
+font_data = SubResource( 1 )
+
+[sub_resource type="DynamicFontData" id=3]
+font_path = "res://Fonts/Xolonium-Regular.ttf"
+
+[sub_resource type="DynamicFont" id=4]
+size = 64
+font_data = SubResource( 3 )
+
+[node name="HighScores" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Button" type="Button" parent="."]
+margin_left = 402.043
+margin_top = 505.017
+margin_right = 626.043
+margin_bottom = 553.017
+custom_fonts/font = SubResource( 2 )
+text = "Back"
+
+[node name="Label" type="Label" parent="."]
+margin_left = 57.8883
+margin_top = 25.0
+margin_right = 327.888
+margin_bottom = 103.0
+custom_fonts/font = SubResource( 4 )
+text = "Position"
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 382.084
+margin_top = 25.0
+margin_right = 580.084
+margin_bottom = 103.0
+custom_fonts/font = SubResource( 4 )
+text = "Name"
+
+[node name="Label3" type="Label" parent="."]
+margin_left = 784.988
+margin_top = 25.0
+margin_right = 982.988
+margin_bottom = 103.0
+custom_fonts/font = SubResource( 4 )
+text = "Score"
+
+[node name="Records" type="ScrollContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 119.0
+margin_right = 1024.0
+margin_bottom = 478.0
+
+[node name="List" type="VBoxContainer" parent="Records"]
+
+[node name="Button2" type="Button" parent="."]
+visible = false
+margin_left = 27.2721
+margin_top = 492.846
+margin_right = 158.272
+margin_bottom = 596.846
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]

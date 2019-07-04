@@ -1,0 +1,101 @@
+[gd_scene load_steps=47 format=2]
+
+[ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/Hero Skeleton/Idle 2/Separate sp/idle 2 (1).png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Hero Skeleton/Idle 2/Separate sp/idle 2 (2).png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Hero Skeleton/Idle 2/Separate sp/idle 2 (3).png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Hero Skeleton/Idle 2/Separate sp/idle 2 (4).png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Hero Skeleton/Idle 2/Separate sp/idle 2 (5).png" type="Texture" id=6]
+[ext_resource path="res://Sprites/Hero Skeleton/Idle 2/Separate sp/idle 2 (6).png" type="Texture" id=7]
+[ext_resource path="res://Sprites/Hero Skeleton/Idle 2/Separate sp/idle 2 (7).png" type="Texture" id=8]
+[ext_resource path="res://Sprites/Hero Skeleton/Idle 2/Separate sp/idle 2 (8).png" type="Texture" id=9]
+[ext_resource path="res://Sprites/Hero Skeleton/Idle 2/Separate sp/idle 2 (9).png" type="Texture" id=10]
+[ext_resource path="res://Sprites/Hero Skeleton/Idle 2/Separate sp/idle 2 (10).png" type="Texture" id=11]
+[ext_resource path="res://Sprites/Hero Skeleton/Run/Separate sp/run (1).png" type="Texture" id=12]
+[ext_resource path="res://Sprites/Hero Skeleton/Run/Separate sp/run (2).png" type="Texture" id=13]
+[ext_resource path="res://Sprites/Hero Skeleton/Run/Separate sp/run (3).png" type="Texture" id=14]
+[ext_resource path="res://Sprites/Hero Skeleton/Run/Separate sp/run (4).png" type="Texture" id=15]
+[ext_resource path="res://Sprites/Hero Skeleton/Run/Separate sp/run (5).png" type="Texture" id=16]
+[ext_resource path="res://Sprites/Hero Skeleton/Run/Separate sp/run (6).png" type="Texture" id=17]
+[ext_resource path="res://Sprites/Hero Skeleton/Run/Separate sp/run (7).png" type="Texture" id=18]
+[ext_resource path="res://Sprites/Hero Skeleton/Run/Separate sp/run (8).png" type="Texture" id=19]
+[ext_resource path="res://Sprites/Hero Skeleton/Attack 5/Separate sp/attack 5 (1).png" type="Texture" id=20]
+[ext_resource path="res://Sprites/Hero Skeleton/Attack 5/Separate sp/attack 5 (2).png" type="Texture" id=21]
+[ext_resource path="res://Sprites/Hero Skeleton/Attack 5/Separate sp/attack 5 (3).png" type="Texture" id=22]
+[ext_resource path="res://Sprites/Hero Skeleton/Attack 5/Separate sp/attack 5 (4).png" type="Texture" id=23]
+[ext_resource path="res://Sprites/Hero Skeleton/Attack 5/Separate sp/attack 5 (5).png" type="Texture" id=24]
+[ext_resource path="res://Sprites/Hero Skeleton/Attack 5/Separate sp/attack 5 (6).png" type="Texture" id=25]
+[ext_resource path="res://Sprites/Hero Skeleton/Attack 5/Separate sp/attack 5 (7).png" type="Texture" id=26]
+[ext_resource path="res://Sprites/Hero Skeleton/Attack 5/Separate sp/attack 5 (8).png" type="Texture" id=27]
+[ext_resource path="res://Sprites/Hero Skeleton/Jump 2/Separate sp/jump 2 (1).png" type="Texture" id=28]
+[ext_resource path="res://Sprites/Hero Skeleton/Jump 2/Separate sp/jump 2 (2).png" type="Texture" id=29]
+[ext_resource path="res://Sprites/Hero Skeleton/Jump 2/Separate sp/jump 2 (3).png" type="Texture" id=30]
+[ext_resource path="res://Sprites/Hero Skeleton/Jump 2/Separate sp/jump 2 (4).png" type="Texture" id=31]
+[ext_resource path="res://Sprites/Hero Skeleton/Jump 2/Separate sp/jump 2 (5).png" type="Texture" id=32]
+[ext_resource path="res://Sprites/Hero Skeleton/Jump 2/Separate sp/jump 2 (6).png" type="Texture" id=33]
+[ext_resource path="res://Sprites/Hero Skeleton/Jump 2/Separate sp/jump 2 (7).png" type="Texture" id=34]
+[ext_resource path="res://Sprites/Hero Skeleton/Jump 2/Separate sp/jump 2 (8).png" type="Texture" id=35]
+[ext_resource path="res://Sprites/Hero Skeleton/Dead/Separate sp/dead (1).png" type="Texture" id=36]
+[ext_resource path="res://Sprites/Hero Skeleton/Dead/Separate sp/dead (2).png" type="Texture" id=37]
+[ext_resource path="res://Sprites/Hero Skeleton/Dead/Separate sp/dead (3).png" type="Texture" id=38]
+[ext_resource path="res://Sprites/Hero Skeleton/Dead/Separate sp/dead (4).png" type="Texture" id=39]
+[ext_resource path="res://Sprites/Hero Skeleton/Dead/Separate sp/dead (5).png" type="Texture" id=40]
+[ext_resource path="res://Sprites/Hero Skeleton/Dead/Separate sp/dead (6).png" type="Texture" id=41]
+[ext_resource path="res://Sprites/Hero Skeleton/Dead/Separate sp/dead (7).png" type="Texture" id=42]
+[ext_resource path="res://Sprites/Hero Skeleton/Dead/Separate sp/dead (8).png" type="Texture" id=43]
+[ext_resource path="res://Sprites/Hero Skeleton/Dead/Separate sp/dead (9).png" type="Texture" id=44]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 8.0
+}, {
+"frames": [ ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ) ],
+"loop": true,
+"name": "Run",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ) ],
+"loop": false,
+"name": "Attack",
+"speed": 13.0
+}, {
+"frames": [ ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ) ],
+"loop": false,
+"name": "Jump",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ) ],
+"loop": false,
+"name": "Landing",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ) ],
+"loop": false,
+"name": "Dead",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 81.0205, 188.994 )
+
+[node name="Player" type="KinematicBody2D"]
+position = Vector2( 1, 0 )
+scale = Vector2( 0.4, 0.4 )
+collision_layer = 0
+script = ExtResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "Idle"
+frame = 8
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -20.0476, -4.29593 )
+shape = SubResource( 2 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true

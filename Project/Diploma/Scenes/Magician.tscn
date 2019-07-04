@@ -1,0 +1,61 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Scripts/Magician.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/mobs/Magician Skeleton/Idle/Separate sp 1/idle (5).png" type="Texture" id=2]
+[ext_resource path="res://Animation/Mobs/Magician_Attack1.tres" type="Animation" id=3]
+[ext_resource path="res://Animation/Mobs/Magician_Attack2.tres" type="Animation" id=4]
+[ext_resource path="res://Animation/Mobs/Magician_Death.tres" type="Animation" id=5]
+[ext_resource path="res://Animation/Mobs/Magician_Idle1.tres" type="Animation" id=6]
+[ext_resource path="res://Animation/Mobs/Magician_Idle2.tres" type="Animation" id=7]
+[ext_resource path="res://Animation/Mobs/Magician_Walk1.tres" type="Animation" id=8]
+[ext_resource path="res://Animation/Mobs/Magician_Walk2.tres" type="Animation" id=9]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 122.919, 173.04 )
+
+[node name="Magician" type="KinematicBody2D"]
+scale = Vector2( 0.4, 0.4 )
+collision_layer = 0
+script = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+
+[node name="anim" type="AnimationPlayer" parent="Sprite"]
+autoplay = "Idle1"
+anims/Attack1 = ExtResource( 3 )
+anims/Attack2 = ExtResource( 4 )
+anims/Death = ExtResource( 5 )
+anims/Idle1 = ExtResource( 6 )
+anims/Idle2 = ExtResource( 7 )
+anims/Walk1 = ExtResource( 8 )
+anims/Walk2 = ExtResource( 9 )
+
+[node name="DetectFloorLeft" type="RayCast2D" parent="."]
+position = Vector2( -120, 50 )
+scale = Vector2( 3, 2.5 )
+enabled = true
+cast_to = Vector2( 0, 60 )
+
+[node name="DetectFloorRight" type="RayCast2D" parent="."]
+position = Vector2( 120, 50 )
+scale = Vector2( 3, 2.5 )
+enabled = true
+cast_to = Vector2( 0, 60 )
+
+[node name="DetectWallLeft" type="RayCast2D" parent="."]
+position = Vector2( 0, 100 )
+rotation = 1.5708
+scale = Vector2( 3, 2.2 )
+enabled = true
+cast_to = Vector2( 0, 60 )
+
+[node name="DetectWallRight" type="RayCast2D" parent="."]
+position = Vector2( 0, 100 )
+rotation = 4.71239
+scale = Vector2( 3, 2.2 )
+enabled = true
+cast_to = Vector2( 0, 60 )

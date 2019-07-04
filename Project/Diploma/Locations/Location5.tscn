@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Locations/test.tres" type="TileSet" id=1]
+[ext_resource path="res://Scenes/key.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Exit.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Player2.tscn" type="PackedScene" id=4]
+
+[node name="Location2" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+scale = Vector2( 2.5, 2.5 )
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( 393216, 0, 0, 393217, 0, 0, 393218, 0, 0, 393219, 0, 0, 393220, 0, 0, 393221, 0, 0, 393222, 0, 0, 393223, 0, 0, 393224, 0, 0, 393225, 0, 0, 393226, 0, 0, 393227, 0, 0, 393228, 0, 0 )
+
+[node name="key" parent="." instance=ExtResource( 2 )]
+position = Vector2( 586.194, 438.51 )
+scale = Vector2( 1.5, 1.5 )
+
+[node name="Exit" parent="." instance=ExtResource( 3 )]
+position = Vector2( 859.205, 385.781 )
+scale = Vector2( 2.5, 2.5 )
+
+[node name="Player" parent="." instance=ExtResource( 4 )]
+position = Vector2( 253.643, 368.109 )
